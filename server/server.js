@@ -12,7 +12,7 @@ app.use(cors())
 const {home} = require("./controllers/pageCtrl")
 
 
-app.get("/", home)
+app.get("/path", home)
 
 
 const {PORT} =  process.env
