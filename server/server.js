@@ -8,11 +8,12 @@ const app = express()
 // app.use(cors())
 
 
-const {home, styles} = require("./controllers/pageCtrl.js")
+const {home, styles, button} = require("./controllers/pageCtrl.js")
 
 
 app.get("/", home)
 app.get("/banana", styles)
+app.get("/js", button)
 
 
 const port =  process.env.PORT || 4005
