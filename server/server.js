@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 
-const {home} = require("./controllers/pageCtrl")
+const {home} = require("./controllers/pageCtrl.js")
 
 
 app.get("/", home)
