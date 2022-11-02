@@ -15,6 +15,6 @@ const {home} = require("./controllers/pageCtrl.js")
 app.get("/", home)
 
 
-const port =  process.env.PORT||4005
+const port =  process.env.PORT || 4005
 
 app.listen(port, () => console.log(`Server lightening on port ${port}`))
